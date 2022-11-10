@@ -14,7 +14,11 @@ body {
     font-family: 'Josefin Sans';
     box-sizing: border-box;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 /*Header*/
+
 /*Header top/nav*/
 
 nav {
@@ -74,13 +78,19 @@ header h1 {
     height: auto;
     text-align: center;
     margin: 1px;
+    padding: 10px 6px 6px;
 }
 .product:hover {
     border: 1px solid var(--grey);
+    border-radius: 16px;
 }
 .product img {
     width: 120px;
     height: 120px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 81px -4px rgba(0,0,0,0.31);
+    -webkit-box-shadow: 1px 1px 81px -4px rgba(0,0,0,0.31);
+    -moz-box-shadow: 1px 1px 81px -4px rgba(0,0,0,0.31);
 }
 .product p:nth-child(2){
     margin-bottom: 0px;
@@ -114,6 +124,6 @@ footer {
     width: 30px;
     height: 30px;
 }
-.footer-icons:nth-child(1) {
+/* .footer-icons:nth-child(1) {
     background-color: #ea0000;
-}
+} */
